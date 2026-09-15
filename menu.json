@@ -1,60 +1,114 @@
 [
   {
-    "id": "avantajli",
-    "title": "Avantajlı Menüler",
-    "bg": "#e67e22",
-    "image": "Main_Menu_Images/avantajli.jpg",
-    "items": [
-      { "name": "Cheese Burger Menu", "desc": "100 gr dana köfte, çift cheddar peyniri, marul, domates, karamelize soğan, turşu ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir. Seçeceğiniz içecek ile. \n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺", "image": "Menu_Resimleri/Menuler/Cheese_Burger_Menu.jpg" },
-      { "name": "Classic Burger Menü", "desc": "100 gr dana köfte, marul, domates, karamelize soğan ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir. Seçeceğiniz içecek ile.\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺", "price": "460₺", "image": "Menu_Resimleri/Menuler/Classic_Burger_Menu.jpg" },
-      { "name": "Mushroom Burger Menü", "desc": "100 gr dana köfte, cheddar peyniri, sotelenmiş mantar karışımı, karamelize soğan ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir. Seçeceğiniz içecek ile.\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺", "price": "480₺", "image": "Menu_Resimleri/Menuler/Mushroom_Burger_Menu.jpg" },
-      { "name": "Dana Füme Etli Burger Menü", "desc": "100 gr dana köfte, cheddar peyniri, dana füme et, karamelize soğan, marul ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir. Seçeceğiniz içecek ile\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺.", "price": "550₺", "image": "Menu_Resimleri/Menuler/Dana_Fume_Etli_Burger_Menu.jpg" },
-      { "name": "Karışık Tost Menü", "desc": "Kaşar Peyniri, Sucuk,Mayonez Yanında Patates Kızartması ve Seçeceğiniz içecek ile.", "price": "360₺", "image": "Menu_Resimleri/Menuler/Sucuklu_Karisik_Menu.jpg" },
-      { "name": "Akdeniz Tost Menü", "desc": "Zeytin Ezmesi, Dil Peyniri, Beyaz Peynir, Kaşar Peyniri, Domates, Roka, , Yanında Patates Kızartması Seçeceğiniz içecek ile.", "price": "350₺", "image": "Menu_Resimleri/Menuler/Akdeniz_Tost_Menu.jpg" },
-      { "name": "Kavurma Karışık Menü", "desc": "Kaşar peyniri, sucuk, kavurma, mayonez. Patates kızartması ve Seçeceğiniz içecek ile.", "price": "450₺", "image": "Menu_Resimleri/Menuler/Kavurmali_Karisik_Menu.jpg" }
-    ]
+  "id": "cigkofte",
+  "title": "Çiğköfte Çeşitleri",
+  "bg": "#c0392b",
+  "image": "Main_Menu_Images/cigkofte.png",
+  "subCategories": [
+    {
+      "subTitle": "Dürümler",
+      "bg": "#c0392b",
+      "image": "Main_Menu_Images/durum.jpg",
+      "items": [
+        { 
+          "name": "Klasik Dürüm (90gr) ", 
+          "desc": "Yeşillik, domates, nar ekşisi, acı sos ile.", 
+          "price": "100₺", 
+          "image": "Main_Menu_Images/durum.jpg" 
+        },
+        { 
+          "name": "Mega Dürüm (120gr)", 
+          "desc": "Bol çiğköfte, ekstra yeşillik, nar ekşisi, acı sos ile.", 
+          "price": "130₺", 
+          "image": "Main_Menu_Images/durum.jpg" 
+        },
+        { 
+          "name": "Double Dürüm (170gr)", 
+          "desc": "Bol çiğköfte, ekstra yeşillik, nar ekşisi, acı sos ile.", 
+          "price": "150₺", 
+          "image": "Main_Menu_Images/durum.jpg" 
+        },
+        { 
+          "name": "Doritoslu Dürüm (90gr)", 
+          "desc": "Doritos cips, yeşillik, özel soslar ile.", 
+          "price": "120₺", 
+          "image": "Main_Menu_Images/durum.jpg" 
+        }
+      ]
+    },
+    {
+      "subTitle": "Porsiyonlar",
+      "bg": "#c0392b",
+      "image": "Main_Menu_Images/cigkofte.png",
+      "items": [
+        { 
+          "name": "Yarım Porsiyon (250gr)", 
+          "desc": "250gr Çiğ Köfte, 4/1 Marul, 2 Adet Lavaş.", 
+          "price": "150₺", 
+          "image": "Main_Menu_Images/cigkofte.png" 
+        },
+        { 
+          "name": "Porsiyon (400gr)", 
+          "desc": "400gr Çiğ Köfte, 4/2 Marul, 4 Adet Lavaş.", 
+          "price": "250₺", 
+          "image": "Main_Menu_Images/cigkofte.png" 
+        },
+        { 
+          "name": "Yarım Kilo (500gr)", 
+          "desc": "500gr Çiğ Köfte, 4/2 Marul, 5 Adet Lavaş.", 
+          "price": "300₺", 
+          "image": "Main_Menu_Images/cigkofte.png" 
+        },
+        { 
+          "name": "Süper Porsiyon (600gr)", 
+          "desc": "600gr Çiğ Köfte, 4/3 Marul, 7 Adet Lavaş.", 
+          "price": "400₺", 
+          "image": "Main_Menu_Images/cigkofte.png" 
+        },
+        { 
+          "name": "Aile Boyu (750gr)", 
+          "desc": "750gr Çiğ Köfte, 4/3 Marul, 8 Adet Lavaş.", 
+          "price": "450₺", 
+          "image": "Main_Menu_Images/cigkofte.png" 
+        },
+        { 
+          "name": "1 Kg Çiğ Köfte (1000gr)", 
+          "desc": "1000gr Çiğ Köfte, 4/4 Marul, 10 Adet Lavaş.", 
+          "price": "600₺", 
+          "image": "Main_Menu_Images/cigkofte.png" 
+        }
+      ]
+    }
+  ]
   },
   {
-    "id": "tostlar",
-    "title": "Tostlar",
-    "bg": "#c0392b",
-    "image": "Main_Menu_Images/tostlar.jpg",
-    "items": [
-      { "name": "Kavurmalı Karışık Perfetto'st", "desc": "Kaşar peyniri, sucuk, kavurma, mayonez. Patates kızartması ile", "price": "400₺", "image": "Menu_Resimleri/Tostlar/Kavurmali_Karisik.jpg" },
-      { "name": "Akdeniz  Perfetto'st", "desc": "Zeytin ezmesi, dil peyniri, beyaz peynir, kaşar peyniri, domates, kekik, roka. Patates kızartması ile", "price": "290₺", "image": "Menu_Resimleri/Tostlar/Akdeniz_Tost.jpg" },
-      { "name": "Kaşarlı  Perfetto'st", "desc": "Kaşar peyniri, mayonez. Patates kızartması ile", "price": "230₺", "image": "Menu_Resimleri/Tostlar/Kasarli_Tost.jpg" },
-      { "name": "Dört Peynir Perfetto'st", "desc": "Kaşar peyniri, dil peyniri, cheddar peyniri, beyaz peynir. Patates kızartması ile", "price": "300₺", "image": "Menu_Resimleri/Tostlar/Dort_Peynir.jpg" },
-      { "name": "Salamlı Sucuklu Karışık Perfetto'st", "desc": "Salam, sucuk, kaşar peyniri. Patates kızartması ile.", "price": "330₺", "image": "Menu_Resimleri/Tostlar/Sucuklu_Karisik.jpg" },
-      { "name": "Yumurtalı Karışık Tost", "desc": "Yumurta, kaşar peyniri, sucuk, mayonez. Patates kızartması ile.", "price": "320₺", "image": "Menu_Resimleri/Tostlar/Yumurtali_Tost.jpg" },
-      { "name": "Karışık Tost", "desc": "Kaşar peyniri, sucuk, mayonez. Patates kızartması ile.", "price": "320₺", "image": "Menu_Resimleri/Tostlar/Sucuklu_Karisik.jpg" },
-      { "name": "Beyaz Peynirli Tost", "desc": "Beyaz peynir, domates, kekik. Patates kızartması ile.", "price": "230₺", "image": "Menu_Resimleri/Tostlar/Beyaz_Peynirli.jpg" },
-      { "name": "Füme Etli Tost", "desc": "Kaşar peyniri, füme et, cheddar peyniri, trüflü mayonez. Patates kızartması ile.", "price": "430₺", "image": "Menu_Resimleri/Tostlar/Kavurmali_Karisik.jpg" },
-      { "name": "Pestolu Tost", "desc": "Mozzarella peyniri, eski kaşar peyniri, kuru domates, pesto. Patates kızartması ile.", "price": "310₺", "image": "Menu_Resimleri/Tostlar/Pestolu_Tost.jpg" },
-      { "name": "Salçalı Karışık Tost", "desc": "Kaşar Peyniri, Sucuk, Özel Salça Sosu, Mayonez, Yanında Patates Kızartması ile.", "price": "320 ₺", "image": "Menu_Resimleri/Tostlar/Kavurmali_Karisik.jpg" },
-      { "name": "Kavurmalı Kaşarlı Tost", "desc": "Kaşar peyniri, kavurma, mayonez. Patates kızartması ile.", "price": "350₺", "image": "Menu_Resimleri/Tostlar/Kavurmali_Karisik.jpg" }
-    ]
-  },
-  {
-    "id": "burgerler",
-    "title": "Burgerler",
+    "id": "tavukpilav",
+    "title": "Tavuk Pilav Çeşitleri",
     "bg": "#8e44ad",
-    "image": "Main_Menu_Images/burgerler.jpg",
+    "image": "Main_Menu_Images/tavukpilav.png",
     "items": [
-      { "name": "Cheese Burger", "desc": "100 gr dana köfte, çift cheddar peyniri, marul, domates, karamelize soğan, turşu ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir.\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺", "price": "430₺", "image": "Menu_Resimleri/Burgerler/Cheese_Burger.jpg" },
-      { "name": "Classic_Burger", "desc": "100 gr dana köfte, marul, domates, karamelize soğan ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir.\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺", "price": "410₺", "image": "Menu_Resimleri/Burgerler/Classic_Burger.jpg" },
-      { "name": "Dana Fume_Etli Burger", "desc": "100 gr dana köfte, cheddar peyniri, dana füme et, karamelize soğan, marul ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir.\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺", "price": "500₺", "image": "Menu_Resimleri/Burgerler/Dana_Fume_Etli_Burger.jpg" },
-      { "name": "Mushroom Burger", "desc": "100 gr dana köfte, cheddar peyniri, sotelenmiş mantar karışımı, karamelize soğan ve özel perfetto sos ile hazırlanır. Patates kızartması ile servis edilir.\n Gramaj Seçenekleri:\n (130gr +80₺) (150gr +120₺)", "price": "480₺ ", "price": "430₺", "image": "Menu_Resimleri/Burgerler/Mushroom_Burger.jpg" }
+      { "name": " Nohutlu Pilav", "desc": "Cin Biberi, Turşu ile", "price": "100₺ ", "image": "Menu_Resimleri/Tavukpilav/tavukpilav.png" },
+      { "name": "Tavuklu Nohutlu Pilav", "desc": "Cin Biberi, Turşu ile", "price": "140₺ ", "image": "Menu_Resimleri/Tavukpilav/tavukpilav.png" },
+      { "name": "Double Tavuklu Nohutlu Pilav", "desc": "Cin Biberi, Turşu ile", "price": "165₺ ", "image": "Menu_Resimleri/Tavukpilav/tavukpilav.png" },
+      { "name": "Mega Tavuklu Nohutlu Pilav", "desc": "Cin Biberi, Turşu ile", "price": "190₺ ", "image": "Menu_Resimleri/Tavukpilav/tavukpilav.png" }
+    ]
+  },
+  {
+    "id": "tatlilar",
+    "title": "Tatlılar",
+    "bg": "#e84393",
+    "image": "Main_Menu_Images/tatli.jpg",
+    "items": [
+      { "name": "Baklava 3 Adet", "desc": "Tek Kişilik.", "price": "120₺", "image": "Menu_Resimleri/Tatlilar/baklava.jpg" },
+      { "name": "Burma Kadayıf", "desc": "Tek kişilik.", "price": "120₺", "image": "Menu_Resimleri/Tatlilar/Burma.jpg" } 
     ]
   },
   {
     "id": "yanurunler",
     "title": "Yan Ürünler",
     "bg": "#27ae60",
-    "image": "Main_Menu_Images/yanurunler.jpg",
-    "items": [
-      { "name": "Porsiyon Patates Kızartması", "desc": "Çıtır çıtır altın sarısı patates.", "price": "160₺", "image": "Menu_Resimleri/Yan_Urunler/Porsiyon_Patates.jpg" },
-      { "name": "Soğan Halkası 6'lı ", "desc": "Çıtır kaplamalı soğan halkaları.", "price": "80₺", "image": "Menu_Resimleri/Yan_Urunler/Sogan_Halkası.jpg" },
-      { "name": "Peynir Çubuğu 3'lü ", "desc": "Kızarmış mozzarella çubukları.", "price": "90₺", "image": "Menu_Resimleri/Yan_Urunler/Peynir_Cubuklari.jpg" }      
+    "image": "Main_Menu_Images/yanurunler.png",
+    "items": [    
     ]
   },
   {
@@ -63,44 +117,24 @@
     "bg": "#2980b9",
     "image": "Main_Menu_Images/icecekler.jpg",
     "items": [
-      { "name": "Limonata", "desc": "El yapımı taze organik limonata.", "price": "70₺", "image": "Menu_Resimleri/Icecekler/Limonata.jpg" },
-      { "name": "Kutu Coca Cola", "desc": "Soğuk içecek, 330ml Kutu.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Cola_Kutu.jpg" },
-      { "name": "1 Litre İçecek", "desc": "Soğuk içecek, 1 Litre .", "price": "120₺", "image": "Menu_Resimleri/Icecekler/Cola_1lt.jpg" },
-      { "name": "Fanta", "desc": "Portakal aromalı gazlı içecek, 330ml.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Fanta_Kutu.jpg" },
-      { "name": "Sprite", "desc": "Limon aromalı gazlı içecek, 330ml.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Sprite_Kutu.jpg" },
-      { "name": "Arslan Ayran", "desc": "Arslan Ayran. 245ml.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Arslan_Ayran.jpg" },
-      { "name": "Ayran Büyük", "desc": " Ayran 285ml.", "price": "60₺", "image": "Menu_Resimleri/Icecekler/Torku_Ayran.jpg" },
-      { "name": "Su", "desc": "0.5 ml.", "price": "30₺", "image": "Menu_Resimleri/Icecekler/Su_0.5.jpg" },
-      { "name": "Çay", "desc": "Taze demlenmiş, bardakta. İsteğe bağlı şeker.", "price": "40₺", "image": "Menu_Resimleri/Icecekler/Cay.jpg" },
-      { "name": "Cappy Karışık", "desc": "330ml Kutu.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Cappy_Karisik.jpg" },
-      { "name": "Cappy Şeftali", "desc": "330ml Kutu.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Cappy_Seftali.jpg" },
-      { "name": "Cappy Vişne", "desc": "330ml Kutu.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Cappy_Visne.jpg" },
-      { "name": "Limonlu Soda", "desc": "Limon Aromalı Gazlı İçecek.", "price": "60₺", "image": "Menu_Resimleri/Icecekler/Limonlu_Maden.jpg" },
-      { "name": "Maden Suyu", "desc": "Maden Suyu.", "price": "50₺", "image": "Menu_Resimleri/Icecekler/Maden_Suyu.jpg" },
-      { "name": "Ice Tea Şeftali ( 330 Ml )", "desc": "Kutu içecek.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Lipton_Seftali.jpg" },
-      { "name": "Ice Tea Limon ( 330 Ml )", "desc": "Kutu içecek.", "price": "80₺", "image": "Menu_Resimleri/Icecekler/Lipton_Limon.jpg" }
-    ]
-  },
-  {
-    "id": "tatlilar",
-    "title": "Tatlılar",
-    "bg": "#e84393",
-    "image": "Main_Menu_Images/tatlilar.jpg",
-    "items": [
-      { "name": "Güveç Sütlaç", "desc": "Güveç sütlaç, tarçınlı. Geleneksel tarifimizle günlük hazırlanır.", "price": "130₺", "image": "Menu_Resimleri/Tatlilar/Sutlac.jpg" },
-      { "name": "KemalPaşa", "desc": "Tek kişilik.", "price": "80₺", "image": "Menu_Resimleri/Tatlilar/Kemalpasa.jpg" },
-      { "name": "Churros", "desc": "Tek kişilik", "price": "130₺", "image": "Menu_Resimleri/Tatlilar/Churros.jpg" }    
-    ]
-  },
-
-  {
-    "id": "salatalar",
-    "title": "Salatalar",
-    "bg": "#27ae60",
-    "image": "Main_Menu_Images/salata.jpg",
-    "items": [
-      { "name": "Mevsim Salatas", "desc": "Marul, Domates, Roka ve Salata.", "price": "120₺", "image": "Menu_Resimleri/Salatalar/salata.jpg" }   
+      { "name": "Kutu Coca Cola", "desc": "Soğuk içecek, 330ml Kutu.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Cola_Kutu.jpg" },
+      { "name": "1 Litre İçecek", "desc": "Soğuk içecek, 1 Litre .", "price": "90₺", "image": "Menu_Resimleri/Icecekler/Cola_1lt.jpg" },
+      { "name": "Fanta", "desc": "Portakal aromalı gazlı içecek, 330ml.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Fanta_Kutu.jpg" },
+      { "name": "Sprite", "desc": "Limon aromalı gazlı içecek, 330ml.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Sprite_Kutu.jpg" },
+      { "name": "Ayran", "desc": "245ml.", "price": "30₺", "image": "Menu_Resimleri/Icecekler/ayrankucuk.jpg" },
+      { "name": "Ayran Büyük", "desc": " Ayran 285ml.", "price": "40₺", "image": "Menu_Resimleri/Icecekler/buyukayran.jpg" },
+      { "name": "Su", "desc": "0.5 ml.", "price": "15₺", "image": "Menu_Resimleri/Icecekler/Su_0.5.jpg" },
+      { "name": "Çay", "desc": "Taze demlenmiş, bardakta. İsteğe bağlı şeker.", "price": "30₺", "image": "Menu_Resimleri/Icecekler/Cay.jpg" },
+      { "name": "Cappy Karışık", "desc": "330ml Kutu.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Cappy_Karisik.jpg" },
+      { "name": "Cappy Şeftali", "desc": "330ml Kutu.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Cappy_Seftali.jpg" },
+      { "name": "Cappy Vişne", "desc": "330ml Kutu.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Cappy_Visne.jpg" },
+      { "name": "Meyveli Soda", "desc": "Limon Aromalı Gazlı İçecek.", "price": "40₺", "image": "Menu_Resimleri/Icecekler/Limonlu_Maden.jpg" },
+      { "name": "Maden Suyu", "desc": "Maden Suyu.", "price": "30₺", "image": "Menu_Resimleri/Icecekler/Maden_Suyu.jpg" },
+      { "name": "Ice Tea Şeftali ( 330 Ml )", "desc": "Kutu içecek.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Lipton_Seftali.jpg" },
+      { "name": "Ice Tea Limon ( 330 Ml )", "desc": "Kutu içecek.", "price": "75₺", "image": "Menu_Resimleri/Icecekler/Lipton_Limon.jpg" }
     ]
   }
+  
+
 
 ]

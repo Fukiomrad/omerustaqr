@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perfetto'st Menü</title>
+  <title>Ömer Usta Menü</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #faf7f2;
+      background: #ffff;
       color: #1a1a1a;
       min-height: 100vh;
+      display: flex; flex-direction: column;
     }
 
     .top-bar {
       position: fixed;
       top: 0; left: 0; right: 0;
       height: 140px;
-      background: #1a1a1a;
+      background: #a51724;
       display: flex;
       align-items: center;
       padding: 0 16px;
@@ -27,7 +28,7 @@
     }
 
     .top-bar .back-btn {
-      background: none; border: none; color: #F6A52D;
+      background: none; border: none; color: #fffefe;
       font-size: 22px; cursor: pointer; padding: 4px;
       display: none; width: 32px; height: 32px;
       align-items: center; justify-content: center;
@@ -41,7 +42,8 @@
       padding: 4px;
     }
     .hamburger span {
-      display: block; height: 2.5px; background: #fff;
+      display: block; height: 2.5px; background: #fff
+      ;
       border-radius: 2px; transition: .3s;
     }
 
@@ -49,11 +51,11 @@
       flex: 1; display: flex; align-items: center; justify-content: center;
     }
     .top-bar .logo-wrap #logoImg {
-      display: block; height: 200px; width: 200px;
+      display: block; height: 10px; width: 10px;
     }
     .top-bar .logo-wrap h1 {
       font-size: 18px; font-weight: 700; letter-spacing: 1px;
-      color: #F6A52D; display: none;
+      color: #978d6d; display: none;
     }
     .top-bar .logo-wrap h1.show { display: block; }
     .top-bar .logo-wrap img.hide { display: none; }
@@ -61,7 +63,7 @@
     .overlay {
       display: none;
       position: fixed; inset: 0;
-      background: rgba(0,0,0,.5);
+      background: a03232(0,0,0,.5);
       z-index: 199;
     }
     .overlay.open { display: block; }
@@ -69,7 +71,7 @@
     .side-nav {
       position: fixed; top: 0; left: -280px;
       width: 280px; height: 100%;
-      background: #1a1a1a; color: #fff;
+      background: #a51724; color: #fff;
       z-index: 200;
       transition: left .3s ease;
       padding: 24px 20px;
@@ -79,14 +81,15 @@
 
     .side-nav .brand {
       margin-bottom: 32px; padding-bottom: 16px;
-      border-bottom: 1px solid #F6A52D;
+      border-bottom: 1px solid #af9191;
     }
 
     .side-nav a {
       display: block;
-      color: #ccc; text-decoration: none;
+      color: #fff; text-decoration: none;
       font-size: 16px; padding: 12px 0;
-      border-bottom: 1px solid #2a2a2a;
+      border-bottom: 1px solid #af9191
+      ;
       transition: color .2s;
     }
     .side-nav a:hover { color: #F6A52D; }
@@ -111,12 +114,12 @@
     /* ── HOME VIEW ── */
     .hero {
       margin-top: 140px;
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      background: linear-gradient(135deg, #a51724 0%, #52191e 100%);
       color: #fff;
       text-align: center;
       padding: 32px 20px 24px;
     }
-    .hero p { font-size: 13px; color: #F6A52D; }
+    .hero p { font-size: 18px; color: #fff; }
 
     .container {
       max-width: 560px; margin: 0 auto; padding: 16px 12px 80px;
@@ -141,7 +144,7 @@
       width: 100%;
       background: linear-gradient(transparent, rgba(0,0,0,.7));
       padding: 40px 14px 16px;
-      color: #F6A52D;
+      color: #fff;
       font-size: 15px; font-weight: 700;
       text-shadow: 0 1px 3px rgba(0,0,0,.5);
       letter-spacing: .5px;
@@ -154,12 +157,12 @@
     /* ── DETAIL VIEW ── */
     .detail-header {
       margin-top: 140px;
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      background: linear-gradient(135deg, #fff 0%, #fff 100%);
       color: #fff;
       text-align: center;
       padding: 28px 20px 24px;
     }
-    .detail-header h2 { font-size: 24px; font-weight: 700; color: #F6A52D; }
+    .detail-header h2 { font-size: 24px; font-weight: 700; color: #a03232; }
 
     .item-grid {
       max-width: 600px; margin: 0 auto; padding: 20px 16px 80px;
@@ -199,14 +202,15 @@
       max-height: 300px; opacity: 1; margin-bottom: 6px;
     }
     .item-card .item-info .expand-hint {
-      font-size: 11px; color: #F6A52D; margin-top: 2px;
+      font-size: 11px; color: #fff
+      ; margin-top: 2px;
       transition: opacity .3s;
     }
     .item-card.expanded .item-info .expand-hint {
       opacity: 0.5;
     }
     .item-card .item-info .price {
-      color: #F6A52D; font-weight: 700; font-size: 15px;
+      color: #e6d224; font-weight: 700; font-size: 15px;
     }
 
     @media (min-width: 480px) {
@@ -215,6 +219,7 @@
     @media (min-width: 600px) {
       .container { padding: 24px 20px 80px; }
     }
+
   </style>
 </head>
 <body>
@@ -225,7 +230,7 @@
       <span></span><span></span><span></span>
     </button>
     <div class="logo-wrap">
-      <img id="logoImg" src="Perfettost_Logo.png" alt="Perfetto'st" />
+      <img id="logoImg" src="mainlogo2.png" alt="Ömer Usta" />
       <h1 id="topTitle"></h1>
     </div>
     <div style="width:32px"></div>
@@ -235,19 +240,19 @@
 
   <nav class="side-nav" id="sideNav">
     <button class="close-btn" id="closeBtn">&times;</button>
-    <div class="brand"><img src="Perfettost_Logo.png" style="height:120px; width:auto; display:block; filter:brightness(0) invert(1);" alt="Perfetto'st" /></div>
+    <div class="brand"><img src="mainlogo2.png" style="height:50px; width:auto; display:block;" alt="Ömer Usta" /></div>
     <a href="#" data-section="avantajli">Avantajlı Menüler</a>
-    <a href="#" data-section="tostlar">Tostlar</a>
-    <a href="#" data-section="burgerler">Burgerler</a>
-    <a href="#" data-section="yanurunler">Yan Ürünler</a>
+    <a href="#" data-section="cigkofte">Çiğköfte Çeşitleri</a>
+    <a href="#" data-section="tavukpilav">Tavuklu Pilav</a>
     <a href="#" data-section="icecekler">İçecekler</a>
     <a href="#" data-section="tatlilar">Tatlılar</a>
+    <a href="#" data-section="yanurunler">Yan Ürünler</a>
   </nav>
 
   <!-- HOME VIEW -->
   <div class="view active" id="homeView">
     <section class="hero">
-      <p>Her lokmada mükemmel lezzet</p>
+      <p>Çayağzı Şubesi</p>
     </section>
     <div class="container"><div class="section-grid" id="menuContainer"></div></div>
   </div>
@@ -260,29 +265,39 @@
     <div class="item-grid" id="itemGrid"></div>
   </div>
 
+  <footer style="background-color: #a51724; padding: 20px; text-align: center; font-family: sans-serif; font-size: 14px; color: #fff; border-top: 1px solid #f8f7f7; margin-top: auto;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+    <p style="margin-bottom: 10px;">
+       Ömer Usta Çayağzı Şubesi. Tüm hakkı saklıdır. &copy; Arda Demiröz 2026 
+    </p>
+    </div>
+    </footer>
+
   <script>
     const COLORS = ['#e74c3c','#e67e22','#f1c40f','#2ecc71','#1abc9c','#3498db','#9b59b6','#e84393','#d35400','#27ae60','#2980b9','#8e44ad'];
 
     let menuData = [];
     let currentSection = null;
+    let currentSubsection = null;
 
     function showView(viewId) {
       document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
       document.getElementById(viewId).classList.add('active');
     }
 
-    function showDetail(sectionId) {
-      currentSection = sectionId;
-      const section = menuData.find(s => s.id === sectionId);
-      if (!section) return;
+    function getSubsections(section) {
+      if (!section) return null;
+      if (section.subsections && section.subsections.length) return section.subsections;
+      if (section.subCategories && section.subCategories.length) return section.subCategories;
+      return null;
+    }
 
-      document.getElementById('detailTitle').textContent = section.title;
-      document.getElementById('topTitle').textContent = section.title;
+    function subTitle(sub) {
+      return sub.title || sub.subTitle || '';
+    }
 
-      const grid = document.getElementById('itemGrid');
-      grid.innerHTML = '';
-
-      section.items.forEach((item, i) => {
+    function renderItemCards(grid, section) {
+      (section.items || []).forEach((item, i) => {
         const card = document.createElement('div');
         card.className = 'item-card';
 
@@ -308,17 +323,76 @@
 
         grid.appendChild(card);
       });
+    }
+
+    function showDetail(sectionId, push = true) {
+      const section = menuData.find(s => s.id === sectionId);
+      if (!section) return;
+
+      currentSection = sectionId;
+      currentSubsection = null;
+
+      document.getElementById('detailTitle').textContent = section.title;
+
+      const grid = document.getElementById('itemGrid');
+      grid.innerHTML = '';
+
+      if (getSubsections(section)) {
+        getSubsections(section).forEach((sub) => {
+          const card = document.createElement('div');
+          card.className = 'section-card';
+          card.style.background = sub.image
+            ? `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(${sub.image}) center/cover`
+            : `linear-gradient(135deg, ${sub.bg || '#a51724'}, #1a1a1a)`;
+          card.innerHTML = `<div class="label">${subTitle(sub)}</div>`;
+          card.addEventListener('click', () => showSubsection(sub));
+          grid.appendChild(card);
+        });
+      } else {
+        renderItemCards(grid, section);
+      }
 
       document.getElementById('backBtn').classList.add('show');
       document.getElementById('logoImg').classList.add('hide');
       document.getElementById('topTitle').classList.add('show');
       showView('detailView');
       window.scrollTo(0, 0);
-      history.pushState({ view: 'detail', section: sectionId }, '');
+      if (push) history.pushState({ view: 'detail', section: sectionId }, '');
+    }
+
+    function showSubsection(subRef, push = true) {
+      const section = menuData.find(s => s.id === currentSection);
+      const subs = section ? getSubsections(section) : null;
+      let sub = subRef;
+      if (typeof subRef !== 'object') {
+        sub = subs && (subs.find(s => s.id === subRef) || subs[parseInt(subRef, 10)] || null);
+      }
+      if (!sub) return;
+
+      currentSubsection = sub.id || (subs ? subs.indexOf(sub) : 0);
+
+      document.getElementById('detailTitle').textContent = subTitle(sub);
+
+      const grid = document.getElementById('itemGrid');
+      grid.innerHTML = '';
+
+      if (sub.items && sub.items.length) {
+        renderItemCards(grid, sub);
+      } else {
+        grid.innerHTML = '<p style="padding:24px 16px; text-align:center; color:#888;">Bu bölüm için içerik yakında eklenecek.</p>';
+      }
+
+      document.getElementById('backBtn').classList.add('show');
+      document.getElementById('logoImg').classList.add('hide');
+      document.getElementById('topTitle').classList.add('show');
+      showView('detailView');
+      window.scrollTo(0, 0);
+      if (push) history.pushState({ view: 'detail', section: currentSection, sub: currentSubsection }, '');
     }
 
     function showHome() {
       currentSection = null;
+      currentSubsection = null;
       document.getElementById('topTitle').classList.remove('show');
       document.getElementById('logoImg').classList.remove('hide');
       document.getElementById('backBtn').classList.remove('show');
@@ -326,9 +400,22 @@
       window.scrollTo(0, 0);
     }
 
+    function goBack() {
+      if (currentSubsection !== null) {
+        showDetail(currentSection, false);
+      } else {
+        showHome();
+      }
+    }
+
     window.addEventListener('popstate', function(e) {
       if (!e.state || e.state.view !== 'detail') {
         showHome();
+      } else if (e.state.sub !== undefined && e.state.sub !== null) {
+        currentSection = e.state.section;
+        showSubsection(e.state.sub, false);
+      } else {
+        showDetail(e.state.section, false);
       }
     });
 
@@ -350,6 +437,7 @@
 
     const fallbackData = [
       {"id":"avantajli","title":"Avantajlı Menüler","bg":"#e67e22","image":"Main_Menu_Images/avantajli.jpg","items":[{"name":"Tost + Patates Kızartması","desc":"Yanında içecek hediyemiz, çıtır patatesler ve özel sos ile servis edilir.","price":"120₺","image":"Menu_Resimleri/Menuler/tost-patates.jpg"},{"name":"Burger + Patates Kızartması","desc":"Yanında içecek hediyemiz, 100% dana köfte, cheddar ve özel burger sosu.","price":"150₺","image":"Menu_Resimleri/Menuler/burger-patates.jpg"},{"name":"Tost + Burger + Patates","desc":"İkili dev menü, hem tost hem burger tek tabakta!","price":"200₺","image":"Menu_Resimleri/Menuler/tost-burger-patates.jpg"},{"name":"Öğle Menüsü","desc":"Tost + Patates + İçecek, 12:00-15:00.","price":"110₺","image":"Menu_Resimleri/Menuler/ogle-menu.jpg"}]},
+      {"id":"cigkofte","title":"Çiğköfte Çeşitleri","bg":"#c0392b","image":"Main_Menu_Images/tostlar.jpg","subsections":[{"id":"cigkofte-durumler","title":"Çiğköfte Dürümler","bg":"#c0392b","items":[]},{"id":"cigkofte-porsiyon","title":"Çiğköfte Porsiyon","bg":"#8e44ad","items":[]}]},
       {"id":"tostlar","title":"Tostlar","bg":"#c0392b","image":"Main_Menu_Images/tostlar.jpg","items":[{"name":"Sucuklu Tost","desc":"Bol sucuklu, özel ekmeğimizde. Dilerseniz kaşar ilavesi.","price":"60₺","image":"Menu_Resimleri/Tostlar/sucuklu-tost.jpg"},{"name":"Kaşarlı Tost","desc":"Çift kaşar, tereyağında kızartılmış çıtır ekmek arasında.","price":"55₺","image":"Menu_Resimleri/Tostlar/kasarlı-tost.jpg"},{"name":"Karışık Tost","desc":"Sucuk, kaşar, domates ve biberin uyumu.","price":"70₺","image":"Menu_Resimleri/Tostlar/karisik-tost.jpg"},{"name":"Peynirli Tost","desc":"Beyaz peynir ve kaşar karışımı, taze otlar.","price":"60₺","image":"Menu_Resimleri/Tostlar/peynirli-tost.jpg"},{"name":"Kavurmalı Tost","desc":"Özel baharatlı kavurma, kaşar peyniri.","price":"75₺","image":"Menu_Resimleri/Tostlar/kavurmali-tost.jpg"},{"name":"Tavuklu Tost","desc":"Izgara tavuk, marul, domates, özel sos.","price":"70₺","image":"Menu_Resimleri/Tostlar/tavuklu-tost.jpg"}]},
       {"id":"burgerler","title":"Burgerler","bg":"#8e44ad","image":"Main_Menu_Images/burgerler.jpg","items":[{"name":"Perfettost Burger","desc":"%100 dana köfte, cheddar, marul, domates, özel sos.","price":"110₺","image":"Menu_Resimleri/Burgerler/perfettost-burger.jpg"},{"name":"Double Perfettost","desc":"Çift dana köfte, çift cheddar, özel sos.","price":"150₺","image":"Menu_Resimleri/Burgerler/double-burger.jpg"},{"name":"Tavuk Burger","desc":"Izgara tavuk, marul, domates, ranch sos.","price":"90₺","image":"Menu_Resimleri/Burgerler/tavuk-burger.jpg"},{"name":"Spicy Burger","desc":"Acılı köfte, jalapeño, pepperjack peyniri.","price":"120₺","image":"Menu_Resimleri/Burgerler/spicy-burger.jpg"},{"name":"Veggie Burger","desc":"Sebze köftesi, avokado, roka, yoğurtlu sos.","price":"95₺","image":"Menu_Resimleri/Burgerler/veggie-burger.jpg"}]},
       {"id":"yanurunler","title":"Yan Ürünler","bg":"#27ae60","image":"Main_Menu_Images/yanurunler.jpg","items":[{"name":"Patates Kızartması","desc":"Çıtır altın sarısı patates, ketçap ve mayonez ile.","price":"35₺","image":"Menu_Resimleri/Yan_Urunler/patates.jpg"},{"name":"Soğan Halkası","desc":"Çıtır kaplamalı soğan halkaları, ranch sos ile.","price":"40₺","image":"Menu_Resimleri/Yan_Urunler/sogan-halkasi.jpg"},{"name":"Peynir Çubukları","desc":"Kızarmış mozzarella çubukları, marinara sos ile.","price":"45₺","image":"Menu_Resimleri/Yan_Urunler/peynir-cubuk.jpg"},{"name":"Tavuk Kanadı","desc":"Baharatlı tavuk kanatları, barbekü sos ile (6 adet).","price":"55₺","image":"Menu_Resimleri/Yan_Urunler/tavuk-kanadi.jpg"},{"name":"Mozzarella Salatası","desc":"Taze mozzarella, cherry domates, fesleğen, balsamik sos.","price":"50₺","image":"Menu_Resimleri/Yan_Urunler/mozzarella-salata.jpg"}]},
@@ -362,11 +450,11 @@
       .then(data => { menuData = data; renderHome(); })
       .catch(() => { menuData = fallbackData; renderHome(); });
 
-    document.getElementById('backBtn').addEventListener('click', showHome);
+    document.getElementById('backBtn').addEventListener('click', goBack);
 
     document.getElementById('logoImg').onload = function() {
-      this.style.setProperty('height', '200px', 'important');
-      this.style.setProperty('width', '200px', 'important');
+      this.style.setProperty('height', '80px', 'important');
+      this.style.setProperty('width', '400px', 'important');
     };
     document.getElementById('logoImg').style.setProperty('height', '200px', 'important');
     document.getElementById('logoImg').style.setProperty('width', '200px', 'important');
