@@ -99,6 +99,9 @@
     "bg": "#e84393",
     "image": "Main_Menu_Images/tatli.jpg",
     "items": [
+      { "name": "Trileçe", "desc": "Tek Kişilik.", "price": "130₺", "image": "Menu_Resimleri/Tatlilar/tri.jpg" },
+      { "name": "Ekler", "desc": "1 Adet.", "price": "40₺", "image": "Menu_Resimleri/Tatlilar/ekler.jpg" },
+      { "name": "Soğuk Baklava", "desc": "Tek Kişilik.", "price": "130₺", "image": "Menu_Resimleri/Tatlilar/soguk.jpg" },
       { "name": "Baklava 3 Adet", "desc": "Tek Kişilik.", "price": "120₺", "image": "Menu_Resimleri/Tatlilar/baklava.jpg" },
       { "name": "Burma Kadayıf", "desc": "Tek kişilik.", "price": "120₺", "image": "Menu_Resimleri/Tatlilar/Burma.jpg" } 
     ]
